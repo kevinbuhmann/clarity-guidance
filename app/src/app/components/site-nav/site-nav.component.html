@@ -1,0 +1,7 @@
+<clr-vertical-nav>
+  @for (page of pages; track page.number) {
+    <a clrVerticalNavLink [routerLink]="['/', page.number]" [routerLinkActive]="'active'">
+      {{ page.number }}. {{ page.title }}
+    </a>
+  }
+</clr-vertical-nav>
